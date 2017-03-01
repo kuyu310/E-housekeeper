@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEB8B32CC456E288DE8917EA /* Pods_E_housekeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
 		E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* ViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		E4AF1FA51E6663B000C587DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1FA31E6663B000C587DE /* LaunchScreen.storyboard */; };
 		E4AF1FB01E6663B000C587DE /* E_housekeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1FAF1E6663B000C587DE /* E_housekeeperTests.swift */; };
 		E4AF1FBB1E6663B000C587DE /* E_housekeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1FBA1E6663B000C587DE /* E_housekeeperUITests.swift */; };
+		E4AF1FCB1E66AF9C00C587DE /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1FCA1E66AF9C00C587DE /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08CD07B83977FE45B10F1744 /* Pods-E-housekeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-housekeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper.release.xcconfig"; sourceTree = "<group>"; };
+		44517B88971632376F38C3A8 /* Pods-E-housekeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-housekeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_housekeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F971E6663B000C587DE /* E-housekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-housekeeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AF1F9C1E6663B000C587DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,8 @@
 		E4AF1FB61E6663B000C587DE /* E-housekeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-housekeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1FBA1E6663B000C587DE /* E_housekeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_housekeeperUITests.swift; sourceTree = "<group>"; };
 		E4AF1FBC1E6663B000C587DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4AF1FC81E66682300C587DE /* E-housekeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E-housekeeper-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4AF1FCA1E66AF9C00C587DE /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB8B32CC456E288DE8917EA /* Pods_E_housekeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86124289A3D46FAB4336CFF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44517B88971632376F38C3A8 /* Pods-E-housekeeper.debug.xcconfig */,
+				08CD07B83977FE45B10F1744 /* Pods-E-housekeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		999294BD7AA21E29BD1FD303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				E4AF1FAE1E6663B000C587DE /* E-housekeeperTests */,
 				E4AF1FB91E6663B000C587DE /* E-housekeeperUITests */,
 				E4AF1F981E6663B000C587DE /* Products */,
+				86124289A3D46FAB4336CFF5 /* Pods */,
+				999294BD7AA21E29BD1FD303 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +124,14 @@
 		E4AF1F991E6663B000C587DE /* E-housekeeper */ = {
 			isa = PBXGroup;
 			children = (
+				E4AF1FC91E66AF9C00C587DE /* public */,
 				E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */,
 				E4AF1F9C1E6663B000C587DE /* ViewController.swift */,
 				E4AF1F9E1E6663B000C587DE /* Main.storyboard */,
 				E4AF1FA11E6663B000C587DE /* Assets.xcassets */,
 				E4AF1FA31E6663B000C587DE /* LaunchScreen.storyboard */,
 				E4AF1FA61E6663B000C587DE /* Info.plist */,
+				E4AF1FC81E66682300C587DE /* E-housekeeper-Bridging-Header.h */,
 			);
 			path = "E-housekeeper";
 			sourceTree = "<group>";
@@ -125,6 +154,14 @@
 			path = "E-housekeeperUITests";
 			sourceTree = "<group>";
 		};
+		E4AF1FC91E66AF9C00C587DE /* public */ = {
+			isa = PBXGroup;
+			children = (
+				E4AF1FCA1E66AF9C00C587DE /* Common.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4AF1FBF1E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeper" */;
 			buildPhases = (
+				7AE00FE9112B8F6EB93D7C0C /* [CP] Check Pods Manifest.lock */,
 				E4AF1F931E6663B000C587DE /* Sources */,
 				E4AF1F941E6663B000C587DE /* Frameworks */,
 				E4AF1F951E6663B000C587DE /* Resources */,
+				610B1F9B561B5AC190A189C8 /* [CP] Embed Pods Frameworks */,
+				F9B2526BBB2D508F41A7E1C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +233,7 @@
 				TargetAttributes = {
 					E4AF1F961E6663B000C587DE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 495CTF6CAM;
 						ProvisioningStyle = Automatic;
 					};
 					E4AF1FAA1E6663B000C587DE = {
@@ -254,12 +295,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		610B1F9B561B5AC190A189C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AE00FE9112B8F6EB93D7C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B2526BBB2D508F41A7E1C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4AF1F931E6663B000C587DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */,
+				E4AF1FCB1E66AF9C00C587DE /* Common.swift in Sources */,
 				E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,9 +498,12 @@
 		};
 		E4AF1FC01E6663B000C587DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44517B88971632376F38C3A8 /* Pods-E-housekeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 495CTF6CAM;
 				INFOPLIST_FILE = "E-housekeeper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +513,12 @@
 		};
 		E4AF1FC11E6663B000C587DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CD07B83977FE45B10F1744 /* Pods-E-housekeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 495CTF6CAM;
 				INFOPLIST_FILE = "E-housekeeper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +599,7 @@
 				E4AF1FC11E6663B000C587DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AF1FC21E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +608,7 @@
 				E4AF1FC41E6663B000C587DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AF1FC51E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +617,7 @@
 				E4AF1FC71E6663B000C587DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
