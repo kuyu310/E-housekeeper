@@ -112,6 +112,102 @@
 			name = "日志";
 			sourceTree = "<group>";
 		};
+		E48FE7981E66CBD7004A2715 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				E48FE7A31E66CEB9004A2715 /* Main */,
+				E48FE7A21E66CEB4004A2715 /* SupportingFiles */,
+				E48FE7A11E66CEAE004A2715 /* KeeperBase */,
+				E48FE7A01E66CEA9004A2715 /* Other */,
+				E48FE79F1E66CEA3004A2715 /* Flow */,
+				E48FE79E1E66CE9D004A2715 /* Address-List */,
+				E48FE79D1E66CE97004A2715 /* Resouce */,
+				E48FE79C1E66CE90004A2715 /* Mine */,
+				E48FE79B1E66CE8A004A2715 /* Login */,
+				E48FE79A1E66CE84004A2715 /* Home */,
+				E48FE7991E66CE79004A2715 /* Tools */,
+				E4AF1FC91E66AF9C00C587DE /* public */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		E48FE7991E66CE79004A2715 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E48FE79A1E66CE84004A2715 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E48FE79B1E66CE8A004A2715 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E48FE79C1E66CE90004A2715 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E48FE79D1E66CE97004A2715 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		E48FE79E1E66CE9D004A2715 /* Address-List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Address-List";
+			sourceTree = "<group>";
+		};
+		E48FE79F1E66CEA3004A2715 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		E48FE7A01E66CEA9004A2715 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E48FE7A11E66CEAE004A2715 /* KeeperBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KeeperBase;
+			sourceTree = "<group>";
+		};
+		E48FE7A21E66CEB4004A2715 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E48FE7A31E66CEB9004A2715 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +234,7 @@
 		E4AF1F991E6663B000C587DE /* E-housekeeper */ = {
 			isa = PBXGroup;
 			children = (
-				E4AF1FC91E66AF9C00C587DE /* public */,
+				E48FE7981E66CBD7004A2715 /* class */,
 				E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */,
 				E4AF1F9C1E6663B000C587DE /* ViewController.swift */,
 				E4AF1F9E1E6663B000C587DE /* Main.storyboard */,
