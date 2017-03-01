@@ -10,6 +10,13 @@
 		AEB8B32CC456E288DE8917EA /* Pods_E_housekeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */; };
 		E48FE7951E66C2D0004A2715 /* 环境文档.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7941E66C2D0004A2715 /* 环境文档.rtfd */; };
 		E48FE7971E66CAC4004A2715 /* 开发流水日志.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7961E66CAC4004A2715 /* 开发流水日志.rtf */; };
+		E48FE7A91E6734D1004A2715 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7A81E6734D1004A2715 /* Theme.swift */; };
+		E48FE7B11E6736FD004A2715 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7AB1E6736FD004A2715 /* Color+Extension.swift */; };
+		E48FE7B21E6736FD004A2715 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7AC1E6736FD004A2715 /* UIBarButtonItem+Extension.swift */; };
+		E48FE7B31E6736FD004A2715 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7AD1E6736FD004A2715 /* UIDevice + Extension.swift */; };
+		E48FE7B41E6736FD004A2715 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7AE1E6736FD004A2715 /* UIImage + Extension.swift */; };
+		E48FE7B51E6736FD004A2715 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7AF1E6736FD004A2715 /* UIView+Extension.swift */; };
+		E48FE7B61E6736FD004A2715 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7B01E6736FD004A2715 /* UpImageDownTextButton.swift */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
 		E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* ViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
@@ -43,6 +50,13 @@
 		D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_housekeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48FE7941E66C2D0004A2715 /* 环境文档.rtfd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.rtfd; path = "环境文档.rtfd"; sourceTree = "<group>"; };
 		E48FE7961E66CAC4004A2715 /* 开发流水日志.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "开发流水日志.rtf"; sourceTree = "<group>"; };
+		E48FE7A81E6734D1004A2715 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E48FE7AB1E6736FD004A2715 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E48FE7AC1E6736FD004A2715 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		E48FE7AD1E6736FD004A2715 /* UIDevice + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
+		E48FE7AE1E6736FD004A2715 /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		E48FE7AF1E6736FD004A2715 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E48FE7B01E6736FD004A2715 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
 		E4AF1F971E6663B000C587DE /* E-housekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-housekeeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AF1F9C1E6663B000C587DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +129,7 @@
 		E48FE7981E66CBD7004A2715 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				E48FE7AA1E6736FD004A2715 /* Extension */,
 				E48FE7A71E671E39004A2715 /* AD */,
 				E48FE7A31E66CEB9004A2715 /* Main */,
 				E48FE7A21E66CEB4004A2715 /* SupportingFiles */,
@@ -216,6 +231,19 @@
 			path = AD;
 			sourceTree = "<group>";
 		};
+		E48FE7AA1E6736FD004A2715 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E48FE7AB1E6736FD004A2715 /* Color+Extension.swift */,
+				E48FE7AC1E6736FD004A2715 /* UIBarButtonItem+Extension.swift */,
+				E48FE7AD1E6736FD004A2715 /* UIDevice + Extension.swift */,
+				E48FE7AE1E6736FD004A2715 /* UIImage + Extension.swift */,
+				E48FE7AF1E6736FD004A2715 /* UIView+Extension.swift */,
+				E48FE7B01E6736FD004A2715 /* UpImageDownTextButton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				E4AF1FCA1E66AF9C00C587DE /* Common.swift */,
+				E48FE7A81E6734D1004A2715 /* Theme.swift */,
 			);
 			path = public;
 			sourceTree = "<group>";
@@ -469,7 +498,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */,
+				E48FE7B31E6736FD004A2715 /* UIDevice + Extension.swift in Sources */,
+				E48FE7B11E6736FD004A2715 /* Color+Extension.swift in Sources */,
+				E48FE7B51E6736FD004A2715 /* UIView+Extension.swift in Sources */,
+				E48FE7A91E6734D1004A2715 /* Theme.swift in Sources */,
 				E4AF1FCB1E66AF9C00C587DE /* Common.swift in Sources */,
+				E48FE7B41E6736FD004A2715 /* UIImage + Extension.swift in Sources */,
+				E48FE7B61E6736FD004A2715 /* UpImageDownTextButton.swift in Sources */,
+				E48FE7B21E6736FD004A2715 /* UIBarButtonItem+Extension.swift in Sources */,
 				E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

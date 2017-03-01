@@ -11,5 +11,6 @@
 #import "MJExtension.h"
 #import "SVProgressHUD.h"
 #import "OnboardingViewController.h"
+#import "BabyBluetooth.h"
 
 #endif /* E_housekeeper_Bridging_Header_h */

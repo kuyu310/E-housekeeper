@@ -22,8 +22,8 @@ let KSelectedChannel: String = "selectedChannel"
 /// 常用属性
 let kItemMargin : CGFloat = 10
 let kHeaderViewH : CGFloat = 50
-let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
-let kNormalItemH = kNormalItemW * 3 / 4
+
+
 let NormalCellID = "NormalCellID"
 let SearchCellID = "SearchCellID"
 let HeaderViewID = "HeaderViewID"
@@ -31,7 +31,33 @@ let HeaderViewID = "HeaderViewID"
 let kStatusBarH: CGFloat = 20
 let kNavigationBarH: CGFloat = 44
 let kTabBarH: CGFloat = 49
-let kScreenW = UIScreen.main.bounds.width
-let kScreenH = UIScreen.main.bounds.height
+
+
+let ENVIRONMENT = 0 //  0－开发/1－测试/2－正式
+/**
+ *  提醒消失时间
+ */
+let HUD_DismisTime = 0.5
+/**
+ *  透明度
+ */
+let kAlpha = 0.3
+/**
+ *  持久化 KEY 值
+ */
+/**
+ *  当前网络状态
+ */
+
+/**
+ *  请求提示文字
+ */
+let Loading = "请稍后..."
+let Request_Failure = "失败"
+let Request_Success = "成功"
+let Request_NOMore = "已加载全部"
+let Request_NoNetwork = "请检查网络链接"
+
+
 
 
