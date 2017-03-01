@@ -38,4 +38,6 @@ pod 'Onboard'
 pod 'DeviceKit', '~> 1.0'
 #用代码轻松auto layout
 pod 'SnapKit'
+#基于CoreBluetooth的封装
+pod 'BabyBluetooth','~> 0.7.0'
 end
