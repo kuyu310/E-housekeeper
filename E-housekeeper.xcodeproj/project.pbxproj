@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AEB8B32CC456E288DE8917EA /* Pods_E_housekeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */; };
+		E48FE7951E66C2D0004A2715 /* readme.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7941E66C2D0004A2715 /* readme.rtfd */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
 		E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* ViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		08CD07B83977FE45B10F1744 /* Pods-E-housekeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-housekeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper.release.xcconfig"; sourceTree = "<group>"; };
 		44517B88971632376F38C3A8 /* Pods-E-housekeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-housekeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-housekeeper/Pods-E-housekeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		D9BDD70FC0BB292BA2C40CB1 /* Pods_E_housekeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_housekeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48FE7941E66C2D0004A2715 /* readme.rtfd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.rtfd; path = readme.rtfd; sourceTree = "<group>"; };
 		E4AF1F971E6663B000C587DE /* E-housekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-housekeeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AF1F9C1E6663B000C587DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,9 +101,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E48FE7931E66C2A1004A2715 /* 日志 */ = {
+			isa = PBXGroup;
+			children = (
+				E48FE7941E66C2D0004A2715 /* readme.rtfd */,
+			);
+			name = "日志";
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
+				E48FE7931E66C2A1004A2715 /* 日志 */,
 				E4AF1F991E6663B000C587DE /* E-housekeeper */,
 				E4AF1FAE1E6663B000C587DE /* E-housekeeperTests */,
 				E4AF1FB91E6663B000C587DE /* E-housekeeperUITests */,
@@ -275,6 +286,7 @@
 			files = (
 				E4AF1FA51E6663B000C587DE /* LaunchScreen.storyboard in Resources */,
 				E4AF1FA21E6663B000C587DE /* Assets.xcassets in Resources */,
+				E48FE7951E66C2D0004A2715 /* readme.rtfd in Resources */,
 				E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
