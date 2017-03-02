@@ -40,4 +40,6 @@ pod 'DeviceKit', '~> 1.0'
 pod 'SnapKit'
 #基于CoreBluetooth的封装
 pod 'BabyBluetooth','~> 0.7.0'
+pod 'WeexSDK'
+pod 'WXDevtool', '0.8.0'
 end

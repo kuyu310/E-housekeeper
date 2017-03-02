@@ -13,4 +13,10 @@
 #import "OnboardingViewController.h"
 #import "BabyBluetooth.h"
 
+
+#import <WeexSDK/WXSDKEngine.h>
+#import <WeexSDK/WXSDKInstance.h>
+#import <WeexSDK/WXLog.h>
+#import <WeexSDK/WXAppConfiguration.h>
+
 #endif /* E_housekeeper_Bridging_Header_h */
