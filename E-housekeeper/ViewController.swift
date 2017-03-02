@@ -20,8 +20,12 @@ class ViewController: UIViewController ,UIGestureRecognizerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
+        
+       
+        
+        
         render()
 
         
@@ -41,6 +45,7 @@ class ViewController: UIViewController ,UIGestureRecognizerDelegate{
         }
     }
     
+  
     
  
     
