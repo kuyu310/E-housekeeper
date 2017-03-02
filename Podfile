@@ -42,4 +42,5 @@ pod 'SnapKit'
 pod 'BabyBluetooth','~> 0.7.0'
 pod 'WeexSDK'
 pod 'WXDevtool', '0.8.0'
+pod 'SDWebImage', '3.7.5'
 end

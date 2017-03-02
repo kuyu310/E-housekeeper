@@ -18,5 +18,9 @@
 #import <WeexSDK/WXSDKInstance.h>
 #import <WeexSDK/WXLog.h>
 #import <WeexSDK/WXAppConfiguration.h>
+#import  <WeexSDK/WeexSDK.h>
+
+#import "WXEventModule.h"
+
 
 #endif /* E_housekeeper_Bridging_Header_h */

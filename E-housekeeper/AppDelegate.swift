@@ -15,7 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        WXAppConfiguration.setAppGroup("授权棒银企管家")
+        WXAppConfiguration.setAppName("授权棒银企管家")
+        WXAppConfiguration.setAppVersion("1.0.0")
+        
+        WXLog.setLogLevel(WXLogLevel.all)
+        
+        // register event module
+        WXSDKEngine.registerModule("event", with: NSClassFromString("WXEventModule"))
+        
+        // register handler
+        WXSDKEngine.registerHandler(WXImageLoaderDefaultImplement(), with:NSProtocolFromString("WXImgLoaderProtocol"))
+        
+        //init WeexSDK
+        WXSDKEngine.initSDKEnvironment()
+        
+        WXSDKEngine.registerComponent("map", with: WXMapComponent.self)
+        
+        let viewController:ViewController = ViewController()
+        viewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = UINavigationController.init(rootViewController: viewController)
         return true
     }
 
