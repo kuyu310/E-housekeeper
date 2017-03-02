@@ -23,7 +23,7 @@ class ViewController: UIViewController ,UIGestureRecognizerDelegate{
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
         
-       
+        
         
         
         render()
