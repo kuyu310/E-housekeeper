@@ -18,7 +18,9 @@ public let ShopCarRedDotAnimationDuration: TimeInterval = 0.2
 // MARK: - 广告页通知
 public let ADImageLoadSecussed = "ADImageLoadSecussed"
 public let ADImageLoadFail = "ADImageLoadFail"
+public let GuideViewControllerDidFinish = "GuideViewControllerDidFinish"
 
 // MARK: - Cache路径
 public let LFBCachePath: String = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
 
+public let KeeperGlobalBackgroundColor = UIColor.colorWithCustom(239, g: 239, b: 239)

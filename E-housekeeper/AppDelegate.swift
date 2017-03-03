@@ -12,9 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var adViewController: ADViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+//        添加消息中心消息
+        addNotification()
+        
+        
+        
         WXAppConfiguration.setAppGroup("授权棒银企管家")
         WXAppConfiguration.setAppName("授权棒银企管家")
         WXAppConfiguration.setAppVersion("1.0.0")
@@ -33,14 +39,96 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 注册地图组件，高德地图
         WXSDKEngine.registerComponent("map", with: WXMapComponent.self)
         
-        let viewController:ViewController = ViewController()
-        viewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = UIColor.white
-        window?.rootViewController = UINavigationController.init(rootViewController: viewController)
+//        let viewController:MainViewController = MainViewController()
+//        viewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+//
+        
+        
+        buildKeyWindow()
+        
+        
         return true
     }
 
+    // MARK: - Public Method
+    fileprivate func buildKeyWindow() {
+        
+        window = UIWindow(frame: ScreenBounds)
+        window!.makeKeyAndVisible()
+        
+        let isFristOpen = UserDefaults.standard.object(forKey: "isFristOpenApp")
+        //UserDefaults 适合存储轻量级的本地客户端数据，比如记住密码功能，要保存一个系统的用户名、密码。使用 UserDefaults 是首选
+        if isFristOpen == nil {
+            window?.rootViewController = GuideViewController()
+
+            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
+        } else {
+            
+            loadADRootViewController()
+        }
+    }
+    
+    
+
+
+    
+    
+    
+    func loadADRootViewController() {
+        
+        adViewController = ADViewController()
+        
+        weak var tmpSelf = self
+        //从json文件中加载相关数据
+        MainAD.loadADData { (data, error) -> Void in
+            if data?.data?.img_name != nil {
+                tmpSelf!.adViewController!.imageName = data!.data!.img_name
+                tmpSelf!.window?.rootViewController = self.adViewController
+            }
+        }
+        
+        
+    }
+
+    
+    
+    func addNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.showMainTabbarControllerSucess(_:)), name: NSNotification.Name(rawValue: ADImageLoadSecussed), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.showMainTabbarControllerFale), name: NSNotification.Name(rawValue: ADImageLoadFail), object: nil)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.shoMainTabBarController), name: NSNotification.Name(rawValue: GuideViewControllerDidFinish), object: nil)
+    }
+
+    func showMainTabbarControllerSucess(_ noti: Notification) {
+        let adImage = noti.object as! UIImage
+        let mainViewController = MainViewController()
+       
+        
+        mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+        
+
+        window?.rootViewController = mainViewController
+    }
+
+    func showMainTabbarControllerFale() {
+        let mainViewController = MainViewController()
+
+         mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+        window!.rootViewController = mainViewController
+    }
+    
+    func shoMainTabBarController() {
+        let mainViewController = MainViewController()
+        
+        mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
+
+        window!.rootViewController = mainViewController
+    }
+
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

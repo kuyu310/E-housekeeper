@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UIGestureRecognizerDelegate{
+class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
 
     var instance:WXSDKInstance?;
     var weexView = UIView()
@@ -58,7 +58,7 @@ class ViewController: UIViewController ,UIGestureRecognizerDelegate{
         let width = self.view.frame.size.width
         
         instance!.frame = CGRect(x: 0, y: 0, width: width, height: self.view.frame.size.height)
-        weak var weakSelf:ViewController? = self
+        weak var weakSelf:MainViewController? = self
         
         //        instance?.onCreate
         instance?.onCreate = {

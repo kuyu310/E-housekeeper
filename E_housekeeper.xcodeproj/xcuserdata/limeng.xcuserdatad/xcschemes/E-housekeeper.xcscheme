@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4AF1F961E6663B000C587DE"
-               BuildableName = "E-housekeeper.app"
-               BlueprintName = "E-housekeeper"
-               ReferencedContainer = "container:E-housekeeper.xcodeproj">
+               BuildableName = "E_housekeeper.app"
+               BlueprintName = "E_housekeeper"
+               ReferencedContainer = "container:E_housekeeper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4AF1FAA1E6663B000C587DE"
-               BuildableName = "E-housekeeperTests.xctest"
-               BlueprintName = "E-housekeeperTests"
-               ReferencedContainer = "container:E-housekeeper.xcodeproj">
+               BuildableName = "E_housekeeperTests.xctest"
+               BlueprintName = "E_housekeeperTests"
+               ReferencedContainer = "container:E_housekeeper.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4AF1FB51E6663B000C587DE"
-               BuildableName = "E-housekeeperUITests.xctest"
-               BlueprintName = "E-housekeeperUITests"
-               ReferencedContainer = "container:E-housekeeper.xcodeproj">
+               BuildableName = "E_housekeeperUITests.xctest"
+               BlueprintName = "E_housekeeperUITests"
+               ReferencedContainer = "container:E_housekeeper.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4AF1F961E6663B000C587DE"
-            BuildableName = "E-housekeeper.app"
-            BlueprintName = "E-housekeeper"
-            ReferencedContainer = "container:E-housekeeper.xcodeproj">
+            BuildableName = "E_housekeeper.app"
+            BlueprintName = "E_housekeeper"
+            ReferencedContainer = "container:E_housekeeper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4AF1F961E6663B000C587DE"
-            BuildableName = "E-housekeeper.app"
-            BlueprintName = "E-housekeeper"
-            ReferencedContainer = "container:E-housekeeper.xcodeproj">
+            BuildableName = "E_housekeeper.app"
+            BlueprintName = "E_housekeeper"
+            ReferencedContainer = "container:E_housekeeper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4AF1F961E6663B000C587DE"
-            BuildableName = "E-housekeeper.app"
-            BlueprintName = "E-housekeeper"
-            ReferencedContainer = "container:E-housekeeper.xcodeproj">
+            BuildableName = "E_housekeeper.app"
+            BlueprintName = "E_housekeeper"
+            ReferencedContainer = "container:E_housekeeper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -23,8 +23,15 @@
 		E48FE8B11E6828F7004A2715 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E48FE8AC1E6828F7004A2715 /* WXImgLoaderDefaultImpl.m */; };
 		E48FE8B21E6828F7004A2715 /* WXMapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE8AD1E6828F7004A2715 /* WXMapComponent.swift */; };
 		E48FE9BC1E68538E004A2715 /* bundlejs in Resources */ = {isa = PBXBuildFile; fileRef = E48FE9BB1E68538E004A2715 /* bundlejs */; };
+		E48FE9BE1E691355004A2715 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9BD1E691355004A2715 /* ADViewController.swift */; };
+		E48FE9C11E691D30004A2715 /* MainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C01E691D30004A2715 /* MainAD.swift */; };
+		E48FE9C31E691D9F004A2715 /* AD in Resources */ = {isa = PBXBuildFile; fileRef = E48FE9C21E691D9F004A2715 /* AD */; };
+		E48FE9C71E6954F9004A2715 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C61E6954F9004A2715 /* GuideViewController.swift */; };
+		E48FE9CA1E6955CA004A2715 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C91E6955CA004A2715 /* BaseViewController.swift */; };
+		E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */; };
+		E48FE9CE1E6956E2004A2715 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9CD1E6956E2004A2715 /* GuideCell.swift */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
-		E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* ViewController.swift */; };
+		E4AF1F9D1E6663B000C587DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* MainViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
 		E4AF1FA21E6663B000C587DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1FA11E6663B000C587DE /* Assets.xcassets */; };
 		E4AF1FA51E6663B000C587DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1FA31E6663B000C587DE /* LaunchScreen.storyboard */; };
@@ -71,17 +78,24 @@
 		E48FE8AC1E6828F7004A2715 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		E48FE8AD1E6828F7004A2715 /* WXMapComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXMapComponent.swift; sourceTree = "<group>"; };
 		E48FE9BB1E68538E004A2715 /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundlejs; sourceTree = "<group>"; };
-		E4AF1F971E6663B000C587DE /* E-housekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-housekeeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48FE9BD1E691355004A2715 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		E48FE9C01E691D30004A2715 /* MainAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAD.swift; sourceTree = "<group>"; };
+		E48FE9C21E691D9F004A2715 /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
+		E48FE9C61E6954F9004A2715 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		E48FE9C91E6955CA004A2715 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
+		E48FE9CD1E6956E2004A2715 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
+		E4AF1F971E6663B000C587DE /* E_housekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_housekeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4AF1F9C1E6663B000C587DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4AF1F9C1E6663B000C587DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E4AF1F9F1E6663B000C587DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4AF1FA11E6663B000C587DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4AF1FA41E6663B000C587DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AF1FA61E6663B000C587DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4AF1FAB1E6663B000C587DE /* E-housekeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-housekeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AF1FAB1E6663B000C587DE /* E_housekeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = E_housekeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1FAF1E6663B000C587DE /* E_housekeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_housekeeperTests.swift; sourceTree = "<group>"; };
 		E4AF1FB11E6663B000C587DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4AF1FB61E6663B000C587DE /* E-housekeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-housekeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AF1FB61E6663B000C587DE /* E_housekeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = E_housekeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1FBA1E6663B000C587DE /* E_housekeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_housekeeperUITests.swift; sourceTree = "<group>"; };
 		E4AF1FBC1E6663B000C587DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4AF1FC81E66682300C587DE /* E-housekeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E-housekeeper-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -143,6 +157,7 @@
 		E48FE7981E66CBD7004A2715 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				E48FE9C81E6955CA004A2715 /* base */,
 				E48FE7AA1E6736FD004A2715 /* Extension */,
 				E48FE7A71E671E39004A2715 /* AD */,
 				E48FE7A31E66CEB9004A2715 /* Main */,
@@ -164,6 +179,7 @@
 		E48FE7991E66CE79004A2715 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -192,6 +208,7 @@
 		E48FE79D1E66CE97004A2715 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
+				E48FE9C21E691D9F004A2715 /* AD */,
 			);
 			path = Resouce;
 			sourceTree = "<group>";
@@ -241,6 +258,10 @@
 		E48FE7A71E671E39004A2715 /* AD */ = {
 			isa = PBXGroup;
 			children = (
+				E48FE9CD1E6956E2004A2715 /* GuideCell.swift */,
+				E48FE9C61E6954F9004A2715 /* GuideViewController.swift */,
+				E48FE9BD1E691355004A2715 /* ADViewController.swift */,
+				E48FE9BF1E691D25004A2715 /* model */,
 			);
 			path = AD;
 			sourceTree = "<group>";
@@ -272,6 +293,22 @@
 			path = extend;
 			sourceTree = "<group>";
 		};
+		E48FE9BF1E691D25004A2715 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E48FE9C01E691D30004A2715 /* MainAD.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		E48FE9C81E6955CA004A2715 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E48FE9C91E6955CA004A2715 /* BaseViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
@@ -289,9 +326,9 @@
 		E4AF1F981E6663B000C587DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4AF1F971E6663B000C587DE /* E-housekeeper.app */,
-				E4AF1FAB1E6663B000C587DE /* E-housekeeperTests.xctest */,
-				E4AF1FB61E6663B000C587DE /* E-housekeeperUITests.xctest */,
+				E4AF1F971E6663B000C587DE /* E_housekeeper.app */,
+				E4AF1FAB1E6663B000C587DE /* E_housekeeperTests.xctest */,
+				E4AF1FB61E6663B000C587DE /* E_housekeeperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,7 +339,7 @@
 				E48FE8A61E6828F7004A2715 /* extend */,
 				E48FE7981E66CBD7004A2715 /* class */,
 				E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */,
-				E4AF1F9C1E6663B000C587DE /* ViewController.swift */,
+				E4AF1F9C1E6663B000C587DE /* MainViewController.swift */,
 				E4AF1F9E1E6663B000C587DE /* Main.storyboard */,
 				E4AF1FA11E6663B000C587DE /* Assets.xcassets */,
 				E4AF1FA31E6663B000C587DE /* LaunchScreen.storyboard */,
@@ -342,9 +379,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4AF1F961E6663B000C587DE /* E-housekeeper */ = {
+		E4AF1F961E6663B000C587DE /* E_housekeeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4AF1FBF1E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeper" */;
+			buildConfigurationList = E4AF1FBF1E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeper" */;
 			buildPhases = (
 				7AE00FE9112B8F6EB93D7C0C /* [CP] Check Pods Manifest.lock */,
 				E4AF1F931E6663B000C587DE /* Sources */,
@@ -357,14 +394,14 @@
 			);
 			dependencies = (
 			);
-			name = "E-housekeeper";
+			name = E_housekeeper;
 			productName = "E-housekeeper";
-			productReference = E4AF1F971E6663B000C587DE /* E-housekeeper.app */;
+			productReference = E4AF1F971E6663B000C587DE /* E_housekeeper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E4AF1FAA1E6663B000C587DE /* E-housekeeperTests */ = {
+		E4AF1FAA1E6663B000C587DE /* E_housekeeperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4AF1FC21E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperTests" */;
+			buildConfigurationList = E4AF1FC21E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeperTests" */;
 			buildPhases = (
 				E4AF1FA71E6663B000C587DE /* Sources */,
 				E4AF1FA81E6663B000C587DE /* Frameworks */,
@@ -375,14 +412,14 @@
 			dependencies = (
 				E4AF1FAD1E6663B000C587DE /* PBXTargetDependency */,
 			);
-			name = "E-housekeeperTests";
+			name = E_housekeeperTests;
 			productName = "E-housekeeperTests";
-			productReference = E4AF1FAB1E6663B000C587DE /* E-housekeeperTests.xctest */;
+			productReference = E4AF1FAB1E6663B000C587DE /* E_housekeeperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E4AF1FB51E6663B000C587DE /* E-housekeeperUITests */ = {
+		E4AF1FB51E6663B000C587DE /* E_housekeeperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4AF1FC51E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperUITests" */;
+			buildConfigurationList = E4AF1FC51E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeperUITests" */;
 			buildPhases = (
 				E4AF1FB21E6663B000C587DE /* Sources */,
 				E4AF1FB31E6663B000C587DE /* Frameworks */,
@@ -393,9 +430,9 @@
 			dependencies = (
 				E4AF1FB81E6663B000C587DE /* PBXTargetDependency */,
 			);
-			name = "E-housekeeperUITests";
+			name = E_housekeeperUITests;
 			productName = "E-housekeeperUITests";
-			productReference = E4AF1FB61E6663B000C587DE /* E-housekeeperUITests.xctest */;
+			productReference = E4AF1FB61E6663B000C587DE /* E_housekeeperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -425,7 +462,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4AF1F921E6663B000C587DE /* Build configuration list for PBXProject "E-housekeeper" */;
+			buildConfigurationList = E4AF1F921E6663B000C587DE /* Build configuration list for PBXProject "E_housekeeper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -438,9 +475,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4AF1F961E6663B000C587DE /* E-housekeeper */,
-				E4AF1FAA1E6663B000C587DE /* E-housekeeperTests */,
-				E4AF1FB51E6663B000C587DE /* E-housekeeperUITests */,
+				E4AF1F961E6663B000C587DE /* E_housekeeper */,
+				E4AF1FAA1E6663B000C587DE /* E_housekeeperTests */,
+				E4AF1FB51E6663B000C587DE /* E_housekeeperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +490,7 @@
 				E48FE9BC1E68538E004A2715 /* bundlejs in Resources */,
 				E48FE7971E66CAC4004A2715 /* 开发流水日志.rtf in Resources */,
 				E4AF1FA51E6663B000C587DE /* LaunchScreen.storyboard in Resources */,
+				E48FE9C31E691D9F004A2715 /* AD in Resources */,
 				E4AF1FA21E6663B000C587DE /* Assets.xcassets in Resources */,
 				E48FE7951E66C2D0004A2715 /* 环境文档.rtfd in Resources */,
 				E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */,
@@ -528,19 +566,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4AF1F9D1E6663B000C587DE /* ViewController.swift in Sources */,
+				E4AF1F9D1E6663B000C587DE /* MainViewController.swift in Sources */,
 				E48FE8AF1E6828F7004A2715 /* WXEventModule.swift in Sources */,
 				E48FE7B31E6736FD004A2715 /* UIDevice + Extension.swift in Sources */,
 				E48FE8B01E6828F7004A2715 /* WXImageLoaderDefaultImplement.swift in Sources */,
+				E48FE9CA1E6955CA004A2715 /* BaseViewController.swift in Sources */,
 				E48FE7B11E6736FD004A2715 /* Color+Extension.swift in Sources */,
+				E48FE9BE1E691355004A2715 /* ADViewController.swift in Sources */,
+				E48FE9C11E691D30004A2715 /* MainAD.swift in Sources */,
 				E48FE7B51E6736FD004A2715 /* UIView+Extension.swift in Sources */,
 				E48FE7A91E6734D1004A2715 /* Theme.swift in Sources */,
 				E4AF1FCB1E66AF9C00C587DE /* Common.swift in Sources */,
 				E48FE7B41E6736FD004A2715 /* UIImage + Extension.swift in Sources */,
+				E48FE9C71E6954F9004A2715 /* GuideViewController.swift in Sources */,
 				E48FE7B61E6736FD004A2715 /* UpImageDownTextButton.swift in Sources */,
 				E48FE8AE1E6828F7004A2715 /* WXEventModule.m in Sources */,
 				E48FE8B21E6828F7004A2715 /* WXMapComponent.swift in Sources */,
+				E48FE9CE1E6956E2004A2715 /* GuideCell.swift in Sources */,
 				E48FE8B11E6828F7004A2715 /* WXImgLoaderDefaultImpl.m in Sources */,
+				E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */,
 				E48FE7B21E6736FD004A2715 /* UIBarButtonItem+Extension.swift in Sources */,
 				E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */,
 			);
@@ -567,12 +611,12 @@
 /* Begin PBXTargetDependency section */
 		E4AF1FAD1E6663B000C587DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4AF1F961E6663B000C587DE /* E-housekeeper */;
+			target = E4AF1F961E6663B000C587DE /* E_housekeeper */;
 			targetProxy = E4AF1FAC1E6663B000C587DE /* PBXContainerItemProxy */;
 		};
 		E4AF1FB81E6663B000C587DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4AF1F961E6663B000C587DE /* E-housekeeper */;
+			target = E4AF1F961E6663B000C587DE /* E_housekeeper */;
 			targetProxy = E4AF1FB71E6663B000C587DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -734,7 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeperTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-housekeeper.app/E-housekeeper";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E_housekeeper.app/E_housekeeper";
 			};
 			name = Debug;
 		};
@@ -748,7 +792,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeperTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-housekeeper.app/E-housekeeper";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E_housekeeper.app/E_housekeeper";
 			};
 			name = Release;
 		};
@@ -781,7 +825,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4AF1F921E6663B000C587DE /* Build configuration list for PBXProject "E-housekeeper" */ = {
+		E4AF1F921E6663B000C587DE /* Build configuration list for PBXProject "E_housekeeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AF1FBD1E6663B000C587DE /* Debug */,
@@ -790,7 +834,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4AF1FBF1E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeper" */ = {
+		E4AF1FBF1E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AF1FC01E6663B000C587DE /* Debug */,
@@ -799,7 +843,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4AF1FC21E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperTests" */ = {
+		E4AF1FC21E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AF1FC31E6663B000C587DE /* Debug */,
@@ -808,7 +852,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4AF1FC51E6663B000C587DE /* Build configuration list for PBXNativeTarget "E-housekeeperUITests" */ = {
+		E4AF1FC51E6663B000C587DE /* Build configuration list for PBXNativeTarget "E_housekeeperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AF1FC61E6663B000C587DE /* Debug */,

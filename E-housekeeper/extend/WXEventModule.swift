@@ -17,7 +17,7 @@ public extension WXEventModule {
             //relative path
             newUrl = (URL.init(string: url, relativeTo: weexInstance.scriptURL)!.absoluteString)
         }
-        let controller:ViewController = ViewController()
+        let controller: MainViewController = MainViewController()
         controller.url = URL.init(string: newUrl)
         weexInstance.viewController.navigationController?.pushViewController(controller, animated:true)
     }
