@@ -19,8 +19,12 @@
 #import <WeexSDK/WXLog.h>
 #import <WeexSDK/WXAppConfiguration.h>
 #import  <WeexSDK/WeexSDK.h>
+#import <TBWXDevtool/WXDevtool.h> //TBWXdevtool是包的名称
+
 
 #import "WXEventModule.h"
+#import "UIImageView+WebCache.h"
+
 
 
 #endif /* E_housekeeper_Bridging_Header_h */

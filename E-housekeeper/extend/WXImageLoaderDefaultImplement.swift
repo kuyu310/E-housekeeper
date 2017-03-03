@@ -9,7 +9,7 @@
 import Foundation
 import WeexSDK
 import Swift
-import SDWebImage
+
 
 class WXImageLoaderDefaultImplement:NSObject, WXImgLoaderProtocol {
     
