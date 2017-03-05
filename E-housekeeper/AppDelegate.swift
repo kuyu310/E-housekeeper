@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var adViewController: ADViewController?
+    var guideViewController: GuideViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -41,7 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let viewController:MainViewController = MainViewController()
 //        viewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
-//
+
+//        window = UIWindow.init(frame: UIScreen.main.bounds)
+//        window?.backgroundColor = UIColor.white
+//        window?.rootViewController = UINavigationController.init(rootViewController: viewController)
+//        return true
         
         
         buildKeyWindow()
@@ -59,19 +64,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let isFristOpen = UserDefaults.standard.object(forKey: "isFristOpenApp")
         //UserDefaults 适合存储轻量级的本地客户端数据，比如记住密码功能，要保存一个系统的用户名、密码。使用 UserDefaults 是首选
         if isFristOpen == nil {
-            window?.rootViewController = GuideViewController()
-
-            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
+            guideViewController = GuideViewController()
+            window!.rootViewController = UINavigationController.init(rootViewController: guideViewController!)
+            
+            
+            
+//          先测试用，屏蔽下面的这行
+//            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
         } else {
             
             loadADRootViewController()
         }
     }
-    
-    
-
-
-    
     
     
     func loadADRootViewController() {
@@ -102,29 +106,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func showMainTabbarControllerSucess(_ noti: Notification) {
-        let adImage = noti.object as! UIImage
         let mainViewController = MainViewController()
-       
-        
         mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
-        
-
-        window?.rootViewController = mainViewController
+        window!.rootViewController = UINavigationController.init(rootViewController: mainViewController)
     }
 
     func showMainTabbarControllerFale() {
         let mainViewController = MainViewController()
-
          mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
-        window!.rootViewController = mainViewController
+        window!.rootViewController = UINavigationController.init(rootViewController: mainViewController)
     }
     
     func shoMainTabBarController() {
         let mainViewController = MainViewController()
+         mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
         
-        mainViewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
-
-        window!.rootViewController = mainViewController
+        
+       
+window!.rootViewController = UINavigationController.init(rootViewController: mainViewController)
     }
 
     

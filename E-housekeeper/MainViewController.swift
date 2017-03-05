@@ -21,21 +21,15 @@ class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
-        
-        
-        
+//        self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
         
         render()
-
-        
-        
        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
     }
 
 
@@ -57,10 +51,10 @@ class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
         instance!.viewController = self
         let width = self.view.frame.size.width
         
-        instance!.frame = CGRect(x: 0, y: 0, width: width, height: self.view.frame.size.height)
+        instance!.frame = CGRect(x: 0, y: NavigationH, width: width, height: self.view.frame.size.height)
         weak var weakSelf:MainViewController? = self
         
-        //        instance?.onCreate
+       
         instance?.onCreate = {
             (view:UIView?)-> Void in
             weakSelf!.weexView.removeFromSuperview()
@@ -84,7 +78,7 @@ class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
             print("update finish")
         }
         
-        instance!.render(with: url, options: ["bundleUrl":String.init(format: "file://%@/bundlejs/", Bundle.main.bundlePath)], data: nil)
+        instance!.render(with: url!, options: ["bundleUrl":String.init(format: "file://%@/bundlejs/", Bundle.main.bundlePath)], data: nil)
     }
     
     

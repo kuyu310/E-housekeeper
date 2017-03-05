@@ -27,8 +27,8 @@ class ADViewController: UIViewController {
                 placeholderImageName = "iphone5"
             case 4.7:
                 placeholderImageName = "iphone6"
-            case 5.5:
-                placeholderImageName = "iphone6p"
+//            case 5.5:
+//                placeholderImageName = "iphone6p"
             default:
                 placeholderImageName = "iphone6s"
             }

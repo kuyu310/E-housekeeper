@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/&#x6388;&#x6743;&#x68d2;&#x94f6;&#x4f01;&#x7ba1;&#x5bb6;/&#x94f6;&#x4f01;&#x7ba1;&#x5bb6;/E-housekeeper/E_housekeeper.xcodeproj">
+      location = "group:/&#x6388;&#x6743;&#x68d2;&#x94f6;&#x4f01;&#x7ba1;&#x5bb6;/&#x94f6;&#x4f01;&#x7ba1;&#x5bb6;/E-housekeeper/Ehousekeeper.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
