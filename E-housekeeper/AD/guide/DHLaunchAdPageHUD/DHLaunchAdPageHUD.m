@@ -180,6 +180,10 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self removeLaunchAdPageHUD];
     });
+    
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"ADImageLoadSecussed" object:self]; //limeng add
+    
+    
 }
 
 #pragma mark - 添加至主窗口

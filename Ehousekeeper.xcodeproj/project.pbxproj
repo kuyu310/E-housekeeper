@@ -24,6 +24,11 @@
 		E4016B2C1E6BD7ED00A950E3 /* guideImage8.gif in Resources */ = {isa = PBXBuildFile; fileRef = E4016B221E6BD7ED00A950E3 /* guideImage8.gif */; };
 		E4016B2D1E6BD7ED00A950E3 /* guideMovie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = E4016B231E6BD7ED00A950E3 /* guideMovie1.mov */; };
 		E4016B2E1E6BD7ED00A950E3 /* view_bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E4016B241E6BD7ED00A950E3 /* view_bg_image.png */; };
+		E4016B931E6D2CC500A950E3 /* adImage1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4016B8E1E6D2CC500A950E3 /* adImage1.jpg */; };
+		E4016B941E6D2CC500A950E3 /* adImage2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4016B8F1E6D2CC500A950E3 /* adImage2.jpg */; };
+		E4016B951E6D2CC500A950E3 /* adImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = E4016B901E6D2CC500A950E3 /* adImage3.gif */; };
+		E4016B961E6D2CC500A950E3 /* adImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = E4016B911E6D2CC500A950E3 /* adImage4.gif */; };
+		E4016B971E6D2CC500A950E3 /* view_bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E4016B921E6D2CC500A950E3 /* view_bg_image.png */; };
 		E48FE7951E66C2D0004A2715 /* 环境文档.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7941E66C2D0004A2715 /* 环境文档.rtfd */; };
 		E48FE7971E66CAC4004A2715 /* 开发流水日志.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7961E66CAC4004A2715 /* 开发流水日志.rtf */; };
 		E48FE7A91E6734D1004A2715 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE7A81E6734D1004A2715 /* Theme.swift */; };
@@ -45,7 +50,6 @@
 		E48FE9C71E6954F9004A2715 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C61E6954F9004A2715 /* GuideViewController.swift */; };
 		E48FE9CA1E6955CA004A2715 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C91E6955CA004A2715 /* BaseViewController.swift */; };
 		E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */; };
-		E48FE9CE1E6956E2004A2715 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9CD1E6956E2004A2715 /* GuideCell.swift */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
 		E4AF1F9D1E6663B000C587DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* MainViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
@@ -100,6 +104,11 @@
 		E4016B221E6BD7ED00A950E3 /* guideImage8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = guideImage8.gif; sourceTree = "<group>"; };
 		E4016B231E6BD7ED00A950E3 /* guideMovie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = guideMovie1.mov; sourceTree = "<group>"; };
 		E4016B241E6BD7ED00A950E3 /* view_bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_bg_image.png; sourceTree = "<group>"; };
+		E4016B8E1E6D2CC500A950E3 /* adImage1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adImage1.jpg; path = "../../../../../../开发源码储备/swift三方库/引导页/DHLaunchPageHUD-master/DHLaunchAdPageHUD/DHLaunchAdPageHUDExample/DHLaunchAdPageHUDExample/Classes/Images/adImage1.jpg"; sourceTree = "<group>"; };
+		E4016B8F1E6D2CC500A950E3 /* adImage2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adImage2.jpg; path = "../../../../../../开发源码储备/swift三方库/引导页/DHLaunchPageHUD-master/DHLaunchAdPageHUD/DHLaunchAdPageHUDExample/DHLaunchAdPageHUDExample/Classes/Images/adImage2.jpg"; sourceTree = "<group>"; };
+		E4016B901E6D2CC500A950E3 /* adImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adImage3.gif; path = "../../../../../../开发源码储备/swift三方库/引导页/DHLaunchPageHUD-master/DHLaunchAdPageHUD/DHLaunchAdPageHUDExample/DHLaunchAdPageHUDExample/Classes/Images/adImage3.gif"; sourceTree = "<group>"; };
+		E4016B911E6D2CC500A950E3 /* adImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adImage4.gif; path = "../../../../../../开发源码储备/swift三方库/引导页/DHLaunchPageHUD-master/DHLaunchAdPageHUD/DHLaunchAdPageHUDExample/DHLaunchAdPageHUDExample/Classes/Images/adImage4.gif"; sourceTree = "<group>"; };
+		E4016B921E6D2CC500A950E3 /* view_bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = view_bg_image.png; path = "../../../../../../开发源码储备/swift三方库/引导页/DHLaunchPageHUD-master/DHLaunchAdPageHUD/DHLaunchAdPageHUDExample/DHLaunchAdPageHUDExample/Classes/Images/view_bg_image.png"; sourceTree = "<group>"; };
 		E48FE7941E66C2D0004A2715 /* 环境文档.rtfd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.rtfd; path = "环境文档.rtfd"; sourceTree = "<group>"; };
 		E48FE7961E66CAC4004A2715 /* 开发流水日志.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "开发流水日志.rtf"; sourceTree = "<group>"; };
 		E48FE7A81E6734D1004A2715 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -123,7 +132,6 @@
 		E48FE9C61E6954F9004A2715 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		E48FE9C91E6955CA004A2715 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
-		E48FE9CD1E6956E2004A2715 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
 		E4AF1F971E6663B000C587DE /* Ehousekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ehousekeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AF1F9C1E6663B000C587DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +227,11 @@
 		E4016B1A1E6BD7ED00A950E3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E4016B8E1E6D2CC500A950E3 /* adImage1.jpg */,
+				E4016B8F1E6D2CC500A950E3 /* adImage2.jpg */,
+				E4016B901E6D2CC500A950E3 /* adImage3.gif */,
+				E4016B911E6D2CC500A950E3 /* adImage4.gif */,
+				E4016B921E6D2CC500A950E3 /* view_bg_image.png */,
 				E4016B1B1E6BD7ED00A950E3 /* guideImage1.jpg */,
 				E4016B1C1E6BD7ED00A950E3 /* guideImage2.jpg */,
 				E4016B1D1E6BD7ED00A950E3 /* guideImage3.jpg */,
@@ -349,7 +362,6 @@
 			children = (
 				E4016B111E6BD70900A950E3 /* DHGuidePageHUD */,
 				E4016B071E6BD70300A950E3 /* DHLaunchAdPageHUD */,
-				E48FE9CD1E6956E2004A2715 /* GuideCell.swift */,
 				E48FE9C61E6954F9004A2715 /* GuideViewController.swift */,
 				E48FE9BD1E691355004A2715 /* ADViewController.swift */,
 				E48FE9BF1E691D25004A2715 /* model */,
@@ -582,6 +594,8 @@
 				E48FE7971E66CAC4004A2715 /* 开发流水日志.rtf in Resources */,
 				E4016B291E6BD7ED00A950E3 /* guideImage5.jpg in Resources */,
 				E4016B191E6BD70900A950E3 /* GuideImage.bundle in Resources */,
+				E4016B951E6D2CC500A950E3 /* adImage3.gif in Resources */,
+				E4016B971E6D2CC500A950E3 /* view_bg_image.png in Resources */,
 				E4016B281E6BD7ED00A950E3 /* guideImage4.jpg in Resources */,
 				E4016B271E6BD7ED00A950E3 /* guideImage3.jpg in Resources */,
 				E4AF1FA51E6663B000C587DE /* LaunchScreen.storyboard in Resources */,
@@ -591,8 +605,11 @@
 				E4AF1FA21E6663B000C587DE /* Assets.xcassets in Resources */,
 				E4016B251E6BD7ED00A950E3 /* guideImage1.jpg in Resources */,
 				E48FE7951E66C2D0004A2715 /* 环境文档.rtfd in Resources */,
+				E4016B941E6D2CC500A950E3 /* adImage2.jpg in Resources */,
 				E4016B2C1E6BD7ED00A950E3 /* guideImage8.gif in Resources */,
+				E4016B931E6D2CC500A950E3 /* adImage1.jpg in Resources */,
 				E4016B2D1E6BD7ED00A950E3 /* guideMovie1.mov in Resources */,
+				E4016B961E6D2CC500A950E3 /* adImage4.gif in Resources */,
 				E4016B2B1E6BD7ED00A950E3 /* guideImage7.gif in Resources */,
 				E4016B2A1E6BD7ED00A950E3 /* guideImage6.gif in Resources */,
 				E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */,
@@ -688,7 +705,6 @@
 				E48FE7B61E6736FD004A2715 /* UpImageDownTextButton.swift in Sources */,
 				E48FE8AE1E6828F7004A2715 /* WXEventModule.m in Sources */,
 				E48FE8B21E6828F7004A2715 /* WXMapComponent.swift in Sources */,
-				E48FE9CE1E6956E2004A2715 /* GuideCell.swift in Sources */,
 				E48FE8B11E6828F7004A2715 /* WXImgLoaderDefaultImpl.m in Sources */,
 				E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */,
 				E48FE7B21E6736FD004A2715 /* UIBarButtonItem+Extension.swift in Sources */,

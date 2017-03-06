@@ -19,13 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        添加消息中心消息
         addNotification()
-        
-        
-        
         WXAppConfiguration.setAppGroup("授权棒银企管家")
         WXAppConfiguration.setAppName("授权棒银企管家")
         WXAppConfiguration.setAppVersion("1.0.0")
-        
         
         WXLog.setLogLevel(WXLogLevel.all)
         
@@ -66,11 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if isFristOpen == nil {
             guideViewController = GuideViewController()
             window!.rootViewController = UINavigationController.init(rootViewController: guideViewController!)
-            
-            
-            
+
 //          先测试用，屏蔽下面的这行
-//            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
+            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
         } else {
             
             loadADRootViewController()
@@ -80,16 +74,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadADRootViewController() {
         
-        adViewController = ADViewController()
-        
-        weak var tmpSelf = self
-        //从json文件中加载相关数据
+//        adViewController = ADViewController()
+
+        var adImageUrl:String?
+//        //从json文件中加载相关数据
         MainAD.loadADData { (data, error) -> Void in
             if data?.data?.img_name != nil {
-                tmpSelf!.adViewController!.imageName = data!.data!.img_name
-                tmpSelf!.window?.rootViewController = self.adViewController
-            }
+                adImageUrl = data!.data!.img_name
+                           }
         }
+//        DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adImageJPGUrl hideSkipButton:NO launchAdClickBlock:^{
+//        NSLog(@"[AppDelegate]:点了广告图片");
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+//        }];
+
+        
+//        let adImageJPGUrl = "http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg"
+//        let adimageGIFUrl = "http://img.ui.cn/data/file/3/4/6/210643.gif"
+//        let adImageJPGPath = Bundle.main.path(forResource: "adImage2", ofType: "jpg")!
+//        let adImageGifPath = Bundle.main.path(forResource: "adImage3", ofType: "gif")!
+        var LaunchAdPage = DHLaunchAdPageHUD.init(frame: ScreenBounds, aDduration: Int(6.0), aDImageUrl: adImageUrl, hideSkipButton:false, launchAdClick: {() -> Void  in
+            print("[AppDelegate]:点了广告图片");
+            
+            UIApplication.shared.openURL(URL.init(string: "https://www.baidu.com")!)
+            
+        
+        
+        
+        })
+        
         
         
     }

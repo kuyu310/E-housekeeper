@@ -28,6 +28,6 @@
 
 //引导页oc的头文件
 #import "DHGuidePageHUD.h"
-
-
+#import "DHLaunchAdPageHUD.h"
+#import "DHGifImageOperation.h"
 #endif /* E_housekeeper_Bridging_Header_h */

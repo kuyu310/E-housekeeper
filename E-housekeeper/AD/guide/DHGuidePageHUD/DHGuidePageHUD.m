@@ -26,7 +26,8 @@
 @implementation DHGuidePageHUD
 
 - (instancetype)dh_initWithFrame:(CGRect)frame imageNameArray:(NSArray<NSString *> *)imageNameArray buttonIsHidden:(BOOL)isHidden {
-    if ([super initWithFrame:frame]) {
+    if ([super initWithFrame:frame])
+    {
         self.slideInto = NO;
         if (isHidden == YES) {
             self.imageArray = imageNameArray;
@@ -113,7 +114,12 @@
         self.alpha = 0;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(DDHidden_TIME * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self performSelector:@selector(removeGuidePageHUD) withObject:nil afterDelay:1];
+            
         });
+        
+ 
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"GuideViewControllerDidFinish" object:self]; //limeng add 
+        
     }];
 }
 
@@ -123,7 +129,8 @@
 
 /**< APP视频新特性页面(新增测试模块内容) */
 - (instancetype)dh_initWithFrame:(CGRect)frame videoURL:(NSURL *)videoURL {
-    if ([super initWithFrame:frame]) {
+    if ([super initWithFrame:frame])
+    {
         self.playerController = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
         [self.playerController.view setFrame:frame];
         [self.playerController.view setAlpha:1.0];
