@@ -22,16 +22,23 @@
 @end
 
 @implementation DHLaunchAdPageHUD
-- (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock {
+- (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration  IsConnectNet:(BOOL)lsNet aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock {
     self = [super initWithFrame:frame];
     if (self) {
         self.adFrame = frame;
         self.aDduration = duration;
         self.aDImageUrl = imageUrl;
         self.aDhideSkipButton = hideSkip;
+        
         self.frame = [[UIScreen mainScreen] bounds];
-        [self addSubview:self.setUpLaunchImageView];
-        [self addSubview:self.setUpAdImageView];
+        if (lsNet){
+            [self addSubview:self.setUpAdImageView];
+        
+        }
+        else{
+        
+            [self addSubview:self.setUpLaunchImageView];
+        }
         [self addSubview:self.setUpSkipButton];
         [self launchAdPageStart];
         [self launchAdPageEnd];
@@ -64,6 +71,7 @@
             return image;
         }
     }
+//    [NSThread sleepForTimeInterval:3];
     NSLog(@"[DHLaunchAdPageHUD]:请添加启动图片");
     return nil;
 }

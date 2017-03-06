@@ -859,10 +859,11 @@
 			baseConfigurationReference = B3376198FF571F49AAD346CE /* Pods-Ehousekeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "E-housekeeper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -877,10 +878,11 @@
 			baseConfigurationReference = EA98F8BE94136E2A7D53D8AF /* Pods-Ehousekeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 495CTF6CAM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "E-housekeeper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunyard.E-housekeeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";

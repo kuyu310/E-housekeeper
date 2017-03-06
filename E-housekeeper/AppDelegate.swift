@@ -35,16 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         WXSDKEngine.initSDKEnvironment()
         // 注册地图组件，高德地图
         WXSDKEngine.registerComponent("map", with: WXMapComponent.self)
-        
-//        let viewController:MainViewController = MainViewController()
-//        viewController.url = URL.init(string: String.init(format: "file://%@/bundlejs/index.js", Bundle.main.bundlePath))
 
-//        window = UIWindow.init(frame: UIScreen.main.bounds)
-//        window?.backgroundColor = UIColor.white
-//        window?.rootViewController = UINavigationController.init(rootViewController: viewController)
-//        return true
-        
-        
         buildKeyWindow()
         
         
@@ -81,27 +72,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MainAD.loadADData { (data, error) -> Void in
             if data?.data?.img_name != nil {
                 adImageUrl = data!.data!.img_name
-                           }
+                var LaunchAdPage = DHLaunchAdPageHUD.init(frame: ScreenBounds, aDduration: Int(6.0), isConnectNet: true, aDImageUrl: adImageUrl, hideSkipButton: false, launchAdClick: {() -> Void  in
+                    UIApplication.shared.openURL(URL.init(string: "https://www.sunyard.com")!)
+                    
+                })
+                
+            }
+            
+            else
+            {
+               //后面这里添加连不上网的情况
+                
+                var LaunchAdPage = DHLaunchAdPageHUD.init(frame: ScreenBounds, aDduration: Int(6.0), isConnectNet: false, aDImageUrl: adImageUrl, hideSkipButton: false, launchAdClick: {() -> Void  in
+                    UIApplication.shared.openURL(URL.init(string: "https://www.sunyard.com")!)
+                    
+                })
+                
+            }
         }
-//        DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adImageJPGUrl hideSkipButton:NO launchAdClickBlock:^{
-//        NSLog(@"[AppDelegate]:点了广告图片");
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
-//        }];
 
-        
-//        let adImageJPGUrl = "http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg"
-//        let adimageGIFUrl = "http://img.ui.cn/data/file/3/4/6/210643.gif"
-//        let adImageJPGPath = Bundle.main.path(forResource: "adImage2", ofType: "jpg")!
-//        let adImageGifPath = Bundle.main.path(forResource: "adImage3", ofType: "gif")!
-        var LaunchAdPage = DHLaunchAdPageHUD.init(frame: ScreenBounds, aDduration: Int(6.0), aDImageUrl: adImageUrl, hideSkipButton:false, launchAdClick: {() -> Void  in
-            print("[AppDelegate]:点了广告图片");
-            
-            UIApplication.shared.openURL(URL.init(string: "https://www.baidu.com")!)
-            
-        
-        
-        
-        })
+    
+       
         
         
         

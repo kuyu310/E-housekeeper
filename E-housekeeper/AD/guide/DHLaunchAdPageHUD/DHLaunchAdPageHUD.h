@@ -19,11 +19,12 @@ typedef void(^DDLaunchAdClickBlock)();
  *
  *  @param frame        位置大小
  *  @param duration     广告停留的时间
+ *  @param IsConnectNet       判断是否联网   limeng add
  *  @param imageUrl     显示广告的图片(这里可以使用本地图片也可以使用网络图片,使用时只传入URL即可,SDK会自动是识别png\jpg\gif的图片)
  *  @param hideSkip     是否隐藏跳过按钮(YES:隐藏; NO不隐藏)
  *  @param aDClickBlock 用户点击广告图片的回调Block
  *
  *  @return DHLaunchAdPageHUD对象
  */
-- (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock;
+- (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration IsConnectNet:(BOOL)lsNet aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock;
 @end
