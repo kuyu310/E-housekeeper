@@ -14,6 +14,9 @@ typedef void(^DDLaunchAdClickBlock)();
 
 @interface DHLaunchAdPageHUD : UIView
 @property (nonatomic, copy) DDLaunchAdClickBlock launchAdClickBlock;/**< 广告点击事件的回调 */
+
+
+
 /**
  *  DHLaunchAdPageHUD
  *
@@ -27,4 +30,6 @@ typedef void(^DDLaunchAdClickBlock)();
  *  @return DHLaunchAdPageHUD对象
  */
 - (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration IsConnectNet:(BOOL)lsNet aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock;
+
+//+ (NSString *)saveImageFileTolocal:(NSString *)url;
 @end

@@ -16,14 +16,21 @@ class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
     var top:CGFloat?;
     var url:URL?;
     
+    let baby = BabyBluetooth.share();
+    let testPeripleralName = "JDY-08";
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-//        self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
+//      self.navigationController?.interactivePopGestureRecognizer?.delegate = self;
         
         render()
+        
+//搜索蓝牙设备
+        DiscoverToPeripherals()
        
     }
 
@@ -39,8 +46,54 @@ class MainViewController: BaseViewController ,UIGestureRecognizerDelegate{
         }
     }
     
-  
-    
+//  发现蓝牙设备
+    func DiscoverToPeripherals(){
+       
+
+        //设置查找Peripherals的规则
+        baby?.setFilterOnDiscoverPeripherals { (name, adv, RSSi) -> Bool in
+            if let name = adv?["kCBAdvDataLocalName"] as? String {
+                if name == self.testPeripleralName as String {
+                    return true;
+                }
+                
+            }
+            return false
+        }
+        //        设置连接Peripherals的规则
+        //        kCBAdvDataLocalName是广播包中的固定名称，是蓝牙模块的规则名称
+        baby?.setFilterOnConnectToPeripherals { (name, adv, RSSI) -> Bool in
+            if let name = adv?["kCBAdvDataLocalName"] as? String {
+                if (name == self.testPeripleralName){
+                    return true;
+                }
+                
+            }
+            return false;
+        }
+
+        //        找到Peripherals的block
+        baby?.setBlockOnDiscoverToPeripherals { (centralManager, peripheral, adv, RSSI) in
+            print("%@", centralManager);
+        };
+        
+        //        连接Peripherals成功的block
+        baby?.setBlockOnConnected { (centralManager, peripheral) in
+            print("connect on :\(peripheral?.name)");
+            SVProgressHUD.show(withStatus: peripheral?.name)
+        };
+        //        设置查找服务的block
+        baby?.setBlockOnDiscoverServices { (p, error) in
+            print("discover services:\(p?.services)");
+        }
+        //        设置查找到Characteristics的block
+        baby?.setBlockOnDiscoverCharacteristics { (p, s, err) in
+            print("discover characteristics:\(s?.characteristics) on uuid \(s?.uuid.uuidString)");
+        }
+        
+        baby?.scanForPeripherals().enjoy();
+        
+    }
  
     
     func render(){

@@ -53,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if isFristOpen == nil {
             guideViewController = GuideViewController()
             window!.rootViewController = UINavigationController.init(rootViewController: guideViewController!)
-
 //          先测试用，屏蔽下面的这行
             UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
         } else {
@@ -72,6 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MainAD.loadADData { (data, error) -> Void in
             if data?.data?.img_name != nil {
                 adImageUrl = data!.data!.img_name
+                
                 var LaunchAdPage = DHLaunchAdPageHUD.init(frame: ScreenBounds, aDduration: Int(6.0), isConnectNet: true, aDImageUrl: adImageUrl, hideSkipButton: false, launchAdClick: {() -> Void  in
                     UIApplication.shared.openURL(URL.init(string: "https://www.sunyard.com")!)
                     

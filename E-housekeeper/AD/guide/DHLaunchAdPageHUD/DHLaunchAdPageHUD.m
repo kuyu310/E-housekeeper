@@ -22,6 +22,10 @@
 @end
 
 @implementation DHLaunchAdPageHUD
+
+
+
+
 - (instancetype)initWithFrame:(CGRect)frame aDduration:(NSInteger)duration  IsConnectNet:(BOOL)lsNet aDImageUrl:(NSString *)imageUrl hideSkipButton:(BOOL)hideSkip launchAdClickBlock:(DDLaunchAdClickBlock)aDClickBlock {
     self = [super initWithFrame:frame];
     if (self) {
@@ -33,7 +37,8 @@
         self.frame = [[UIScreen mainScreen] bounds];
         if (lsNet){
             [self addSubview:self.setUpAdImageView];
-        
+            
+            
         }
         else{
         
@@ -76,8 +81,38 @@
     return nil;
 }
 
++ (NSString *)saveImageFileTolocal:(NSString *)url{
+    
+    NSString *resultFilePath = @"";
+    
+    NSString *destFilePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:[url substringFromIndex:7]]; // 去除域名，组合成本地文件PATH
+    NSString *destFolderPath = [destFilePath stringByDeletingLastPathComponent];
+    // 判断路径文件夹是否存在不存在则创建
+    if (! [[NSFileManager defaultManager] fileExistsAtPath:destFolderPath]) {
+        
+        [[NSFileManager defaultManager] createDirectoryAtPath:destFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    // 判断该文件是否已经下载过
+    if ([[NSFileManager defaultManager] fileExistsAtPath:destFilePath]) {
+        
+        resultFilePath = destFilePath;
+    } else {
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+        if ([imageData writeToFile:destFilePath atomically:YES]) {
+            resultFilePath = destFilePath;
+        }
+    }
+    
+    return resultFilePath;
+}
 #pragma mark - 设置广告图片
 - (UIImageView *)setUpAdImageView {
+    
+    NSString *resultFilePath;
+    
+   
     if (self.adImageView == nil) {
         self.adImageView = [[UIImageView alloc] initWithFrame:self.adFrame];
         self.adImageView.userInteractionEnabled = YES;
@@ -86,9 +121,31 @@
         
         if ([DHRegularExpression checkURL:self.aDImageUrl]) {
             if ([idString isEqualToString:@"gif"]) {
-                NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.aDImageUrl]];
-                [self.adImageView addSubview:[[DHGifImageOperation alloc] initWithFrame:self.adFrame gifImageData:urlData]];
+//                NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.aDImageUrl]];
+//        远程的图片下载下来显示，第二次判断是否下载过，如果下载过就从本地载入，不要在肯流量了。
+                NSString *destFilePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:[self.aDImageUrl substringFromIndex:7]]; // 去除域名，组合成本地文件PATH
+                NSString *destFolderPath = [destFilePath stringByDeletingLastPathComponent];
+                if (! [[NSFileManager defaultManager] fileExistsAtPath:destFolderPath]) {
+                    
+                    [[NSFileManager defaultManager] createDirectoryAtPath:destFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
+                }
+                // 判断该文件是否已经下载过
+                if ([[NSFileManager defaultManager] fileExistsAtPath:destFilePath]) {
+                    
+                    resultFilePath = destFilePath;
+                } else {
+                    
+                    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.aDImageUrl]];
+                    if ([imageData writeToFile:destFilePath atomically:YES]) {
+                        resultFilePath = destFilePath;
+                    }
+                }
+
+                
+               NSData *localData = [NSData dataWithContentsOfFile:resultFilePath];
+                [self.adImageView addSubview:[[DHGifImageOperation alloc] initWithFrame:self.adFrame gifImageData:localData]];
             } else {
+                
                 NSData *aDimageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.aDImageUrl]];
                 [self.adImageView setImage:[[UIImage alloc] initWithData:aDimageData]];
             }
@@ -106,6 +163,11 @@
     }
     return self.adImageView;
 }
+
+
+
+
+
 
 - (void)adImageViewTapAction:(UITapGestureRecognizer *)tap {
     if (self.launchAdClickBlock) {

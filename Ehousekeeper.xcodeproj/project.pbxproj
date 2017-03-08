@@ -50,6 +50,15 @@
 		E48FE9C71E6954F9004A2715 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C61E6954F9004A2715 /* GuideViewController.swift */; };
 		E48FE9CA1E6955CA004A2715 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9C91E6955CA004A2715 /* BaseViewController.swift */; };
 		E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */; };
+		E49CDD841E6FB291006341FA /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD731E6FB291006341FA /* BabyBluetooth.m */; };
+		E49CDD851E6FB291006341FA /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD751E6FB291006341FA /* BabyCallback.m */; };
+		E49CDD861E6FB291006341FA /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD771E6FB291006341FA /* BabyCentralManager.m */; };
+		E49CDD871E6FB291006341FA /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD791E6FB291006341FA /* BabyDefine.m */; };
+		E49CDD881E6FB291006341FA /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD7B1E6FB291006341FA /* BabyOptions.m */; };
+		E49CDD891E6FB291006341FA /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD7D1E6FB291006341FA /* BabyPeripheralManager.m */; };
+		E49CDD8A1E6FB291006341FA /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD7F1E6FB291006341FA /* BabyRhythm.m */; };
+		E49CDD8B1E6FB291006341FA /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD811E6FB291006341FA /* BabySpeaker.m */; };
+		E49CDD8C1E6FB291006341FA /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = E49CDD831E6FB291006341FA /* BabyToy.m */; };
 		E4AF1F9B1E6663B000C587DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */; };
 		E4AF1F9D1E6663B000C587DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF1F9C1E6663B000C587DE /* MainViewController.swift */; };
 		E4AF1FA01E6663B000C587DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AF1F9E1E6663B000C587DE /* Main.storyboard */; };
@@ -132,6 +141,24 @@
 		E48FE9C61E6954F9004A2715 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		E48FE9C91E6955CA004A2715 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E48FE9CB1E695683004A2715 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
+		E49CDD721E6FB291006341FA /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		E49CDD731E6FB291006341FA /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		E49CDD741E6FB291006341FA /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		E49CDD751E6FB291006341FA /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		E49CDD761E6FB291006341FA /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		E49CDD771E6FB291006341FA /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		E49CDD781E6FB291006341FA /* BabyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyDefine.h; sourceTree = "<group>"; };
+		E49CDD791E6FB291006341FA /* BabyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyDefine.m; sourceTree = "<group>"; };
+		E49CDD7A1E6FB291006341FA /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		E49CDD7B1E6FB291006341FA /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		E49CDD7C1E6FB291006341FA /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		E49CDD7D1E6FB291006341FA /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		E49CDD7E1E6FB291006341FA /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		E49CDD7F1E6FB291006341FA /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		E49CDD801E6FB291006341FA /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		E49CDD811E6FB291006341FA /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		E49CDD821E6FB291006341FA /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		E49CDD831E6FB291006341FA /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
 		E4AF1F971E6663B000C587DE /* Ehousekeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ehousekeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AF1F9C1E6663B000C587DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -412,6 +439,31 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		E49CDD711E6FB291006341FA /* babyblooth-for-swift */ = {
+			isa = PBXGroup;
+			children = (
+				E49CDD721E6FB291006341FA /* BabyBluetooth.h */,
+				E49CDD731E6FB291006341FA /* BabyBluetooth.m */,
+				E49CDD741E6FB291006341FA /* BabyCallback.h */,
+				E49CDD751E6FB291006341FA /* BabyCallback.m */,
+				E49CDD761E6FB291006341FA /* BabyCentralManager.h */,
+				E49CDD771E6FB291006341FA /* BabyCentralManager.m */,
+				E49CDD781E6FB291006341FA /* BabyDefine.h */,
+				E49CDD791E6FB291006341FA /* BabyDefine.m */,
+				E49CDD7A1E6FB291006341FA /* BabyOptions.h */,
+				E49CDD7B1E6FB291006341FA /* BabyOptions.m */,
+				E49CDD7C1E6FB291006341FA /* BabyPeripheralManager.h */,
+				E49CDD7D1E6FB291006341FA /* BabyPeripheralManager.m */,
+				E49CDD7E1E6FB291006341FA /* BabyRhythm.h */,
+				E49CDD7F1E6FB291006341FA /* BabyRhythm.m */,
+				E49CDD801E6FB291006341FA /* BabySpeaker.h */,
+				E49CDD811E6FB291006341FA /* BabySpeaker.m */,
+				E49CDD821E6FB291006341FA /* BabyToy.h */,
+				E49CDD831E6FB291006341FA /* BabyToy.m */,
+			);
+			path = "babyblooth-for-swift";
+			sourceTree = "<group>";
+		};
 		E4AF1F8E1E6663B000C587DE = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +491,7 @@
 		E4AF1F991E6663B000C587DE /* E-housekeeper */ = {
 			isa = PBXGroup;
 			children = (
+				E49CDD711E6FB291006341FA /* babyblooth-for-swift */,
 				E48FE8A61E6828F7004A2715 /* extend */,
 				E48FE7981E66CBD7004A2715 /* class */,
 				E4AF1F9A1E6663B000C587DE /* AppDelegate.swift */,
@@ -685,26 +738,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49CDD871E6FB291006341FA /* BabyDefine.m in Sources */,
+				E49CDD8C1E6FB291006341FA /* BabyToy.m in Sources */,
 				E4AF1F9D1E6663B000C587DE /* MainViewController.swift in Sources */,
 				E48FE8AF1E6828F7004A2715 /* WXEventModule.swift in Sources */,
 				E48FE7B31E6736FD004A2715 /* UIDevice + Extension.swift in Sources */,
+				E49CDD861E6FB291006341FA /* BabyCentralManager.m in Sources */,
 				E4016B171E6BD70900A950E3 /* DHGifImageOperation.m in Sources */,
 				E48FE8B01E6828F7004A2715 /* WXImageLoaderDefaultImplement.swift in Sources */,
 				E4016B0F1E6BD70300A950E3 /* DHLaunchAdPageHUD.m in Sources */,
 				E48FE9CA1E6955CA004A2715 /* BaseViewController.swift in Sources */,
 				E48FE7B11E6736FD004A2715 /* Color+Extension.swift in Sources */,
 				E48FE9BE1E691355004A2715 /* ADViewController.swift in Sources */,
+				E49CDD881E6FB291006341FA /* BabyOptions.m in Sources */,
 				E48FE9C11E691D30004A2715 /* MainAD.swift in Sources */,
 				E4016B181E6BD70900A950E3 /* DHGuidePageHUD.m in Sources */,
 				E48FE7B51E6736FD004A2715 /* UIView+Extension.swift in Sources */,
 				E48FE7A91E6734D1004A2715 /* Theme.swift in Sources */,
 				E4AF1FCB1E66AF9C00C587DE /* Common.swift in Sources */,
+				E49CDD8B1E6FB291006341FA /* BabySpeaker.m in Sources */,
+				E49CDD851E6FB291006341FA /* BabyCallback.m in Sources */,
 				E48FE7B41E6736FD004A2715 /* UIImage + Extension.swift in Sources */,
 				E4016B101E6BD70300A950E3 /* DHRegularExpression.m in Sources */,
+				E49CDD841E6FB291006341FA /* BabyBluetooth.m in Sources */,
 				E48FE9C71E6954F9004A2715 /* GuideViewController.swift in Sources */,
 				E48FE7B61E6736FD004A2715 /* UpImageDownTextButton.swift in Sources */,
 				E48FE8AE1E6828F7004A2715 /* WXEventModule.m in Sources */,
 				E48FE8B21E6828F7004A2715 /* WXMapComponent.swift in Sources */,
+				E49CDD8A1E6FB291006341FA /* BabyRhythm.m in Sources */,
+				E49CDD891E6FB291006341FA /* BabyPeripheralManager.m in Sources */,
 				E48FE8B11E6828F7004A2715 /* WXImgLoaderDefaultImpl.m in Sources */,
 				E48FE9CC1E695683004A2715 /* SwiftDictModel.swift in Sources */,
 				E48FE7B21E6736FD004A2715 /* UIBarButtonItem+Extension.swift in Sources */,
